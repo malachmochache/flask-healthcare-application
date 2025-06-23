@@ -1,0 +1,7 @@
+.content-container {
+    max-width: 700px;
+}
+
+.border-danger {
+    border: 2px solid #dc3545 !important;
+}
