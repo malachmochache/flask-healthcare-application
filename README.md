@@ -75,7 +75,7 @@ flask-health-application/
 ├── run.py                          # App entry point
 ├── requirements.txt                # App entry point
 ├── README.md
-└── flask-health-application        # Zip file for project submission
+└── flask-health-application.zip        # Zip file for project submission
 ```
 
 ---
@@ -99,6 +99,15 @@ pip install -r requirements.txt
 Open your browser:
 
 👉 Visit `http://54.210.137.2/` to use the data collection form
+
+### 4. Export data to a CSV file
+Run the `user.py`
+```bash
+python user.py
+```
+The script will:
+- Download the data from the database.
+- Store it in CSV file in the `data` folder.
 
 ---
 
