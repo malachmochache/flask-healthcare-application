@@ -111,12 +111,13 @@ Open your browser:
     jupyter notebook
     ```
 
-The notebook will:
+    The notebook will:
 
-- Load data from `data/survey_data.csv`
-- Generate visual charts for:
-  - Top income-earning age groups
-  - Gender-wise expense category breakdown
+    - Load data from `data/survey_data.csv`
+    - Generate visual charts for:
+    - Top income-earning age groups
+    - Gender-wise expense category breakdown
+3. You can view an executed notebook here: https://github.com/malachmochache/flask-healthcare-application/blob/main/notebooks/analysis.ipynb
 
 ---
 
