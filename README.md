@@ -1,7 +1,7 @@
 
-# Income and Expense Survey Tool
+# 💰 Income and Expense Survey Tool
 
-## Overview
+## 🧾 Overview
 
 This project is a full-stack web application designed to collect and analyze participants' income and spending patterns. It was developed using **Flask** for the backend, **MongoDB** for data storage, **Python** for data processing, and **Jupyter Notebook** for visualization. The tool is intended to assist in market analysis ahead of a new product launch in the healthcare industry.
 
@@ -18,7 +18,7 @@ This project is a full-stack web application designed to collect and analyze par
 
 ---
 
-## Tech Stack
+## 🧱 Tech Stack
 
 - **Backend:** Flask (Python)
 - **Database:** MongoDB
@@ -28,7 +28,7 @@ This project is a full-stack web application designed to collect and analyze par
 
 ---
 
-## Application Flow
+## 🔄 Application Flow
 
 1. User visits the Flask web interface and submits a form with:
    - Age
@@ -80,27 +80,27 @@ flask-health-application/
 
 ---
 
-## 🔧 Setup Instructions
+## ⚙️ Setup Instructions
 
-### 1. Clone the Repository (or download the zip file)
+### 1️⃣ Clone the Repository (or download the zip file)
 
 ```bash
 git clone https://github.com/malachmochache/flask-healthcare-application.git
 cd flask-healthcare-application
 ```
 
-### 2. Install Dependencies
+### 2️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the Flask App remotely
+### 3️⃣ Run the Flask App remotely (Hosted in AWS)
 Open your browser:
 
 👉 Visit `http://54.210.137.2/` to use the data collection form
 
-### 4. Export data to a CSV file
+### 4️⃣ Export data to a CSV file
 Run the `user.py`
 ```bash
 python user.py
@@ -111,7 +111,7 @@ The script will:
 
 ---
 
-## 🏗️ Data Analysis & Visualization
+## 📊 Data Analysis & Visualization
 
 1. Export the data into a CSV file
 2. Navigate to the `notebooks/` folder and open `analysis.ipynb` in Jupyter:
@@ -126,11 +126,11 @@ The script will:
     - Generate visual charts for:
     - Top income-earning age groups
     - Gender-wise expense category breakdown
-3. You can view an executed notebook here: https://github.com/malachmochache/flask-healthcare-application/blob/main/notebooks/analysis.ipynb
+3. You can view an executed notebook here: [analysis.ipynb on GitHub](https://github.com/malachmochache/flask-healthcare-application/blob/main/notebooks/analysis.ipynb)
 
 ---
 
-## Screenshots
+## 🖼️ Screenshots
 
 <p align="center">
   <img src="data/charts/top_ages_income.png" width="400" />
