@@ -64,23 +64,21 @@
                 <ul class="pagination justify-content-center">
                     {% if page > 1 %}
                     <li class="page-item">
-                        <a class="page-link" href="{{ url_for('submissions', page=page-1, gender=gender_filter) }}">⬅
+                        <a class="page-link"
+                            href="{{ url_for('main.submissions', page=page-1, gender=gender_filter) }}">⬅
                             Previous</a>
                     </li>
                     {% endif %}
                     <li class="page-item disabled"><span class="page-link">Page {{ page }} of {{ total_pages }}</span>
                     </li>
                     {% if page < total_pages %} <li class="page-item">
-                        <a class="page-link" href="{{ url_for('submissions', page=page+1, gender=gender_filter) }}">Next
+                        <a class="page-link"
+                            href="{{ url_for('main.submissions', page=page+1, gender=gender_filter) }}">Next
                             ➡</a>
                         </li>
                         {% endif %}
                 </ul>
             </nav>
-
-            <div class="text-center mt-3">
-                <a href="/download_csv" class="btn btn-success">⬇ Download CSV</a>
-            </div>
 
             {% else %}
             <div class="alert alert-warning text-center" role="alert">
@@ -89,7 +87,7 @@
             {% endif %}
 
             <div class="text-center mt-4">
-                <a href="/" class="btn btn-secondary">🔙 Back to Form</a>
+                <a href="/" class="btn btn-secondary">🔙 Back to Home</a>
             </div>
         </div>
     </div>

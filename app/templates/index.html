@@ -45,75 +45,21 @@
                 <!-- Expenses -->
                 <h6 class="mt-4 mb-2">Expenses (Check and Fill):</h6>
                 <div class="row">
-                    <!-- Utilities -->
+                    {% for category in ["utilities", "entertainment", "school_fees", "shopping", "healthcare"] %}
                     <div class="col-md-6">
                         <div class="row align-items-center mb-2">
                             <div class="col-4 d-flex align-items-center">
-                                <input type="checkbox" class="form-check-input me-2" id="utilitiesCheck">
-                                <label for="utilitiesCheck" class="form-check-label">Utilities</label>
+                                <input type="checkbox" class="form-check-input me-2" id="{{ category }}Check">
+                                <label for="{{ category }}Check" class="form-check-label">{{ category.replace('_', '
+                                    ').title() }}</label>
                             </div>
                             <div class="col-8">
-                                <input type="number" class="form-control form-control-sm" id="utilities"
-                                    name="utilities" placeholder="Amount" disabled min="0">
+                                <input type="number" class="form-control form-control-sm" id="{{ category }}"
+                                    name="{{ category }}" placeholder="Amount" disabled min="0">
                             </div>
                         </div>
                     </div>
-
-                    <!-- Entertainment -->
-                    <div class="col-md-6">
-                        <div class="row align-items-center mb-2">
-                            <div class="col-4 d-flex align-items-center">
-                                <input type="checkbox" class="form-check-input me-2" id="entertainmentCheck">
-                                <label for="entertainmentCheck" class="form-check-label">Entertainment</label>
-                            </div>
-                            <div class="col-8">
-                                <input type="number" class="form-control form-control-sm" id="entertainment"
-                                    name="entertainment" placeholder="Amount" disabled min="0">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- School Fees -->
-                    <div class="col-md-6">
-                        <div class="row align-items-center mb-2">
-                            <div class="col-4 d-flex align-items-center">
-                                <input type="checkbox" class="form-check-input me-2" id="schoolFeesCheck">
-                                <label for="schoolFeesCheck" class="form-check-label">School Fees</label>
-                            </div>
-                            <div class="col-8">
-                                <input type="number" class="form-control form-control-sm" id="school_fees"
-                                    name="school_fees" placeholder="Amount" disabled min="0">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Shopping -->
-                    <div class="col-md-6">
-                        <div class="row align-items-center mb-2">
-                            <div class="col-4 d-flex align-items-center">
-                                <input type="checkbox" class="form-check-input me-2" id="shoppingCheck">
-                                <label for="shoppingCheck" class="form-check-label">Shopping</label>
-                            </div>
-                            <div class="col-8">
-                                <input type="number" class="form-control form-control-sm" id="shopping" name="shopping"
-                                    placeholder="Amount" disabled min="0">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Healthcare -->
-                    <div class="col-md-6">
-                        <div class="row align-items-center mb-2">
-                            <div class="col-4 d-flex align-items-center">
-                                <input type="checkbox" class="form-check-input me-2" id="healthcareCheck">
-                                <label for="healthcareCheck" class="form-check-label">Healthcare</label>
-                            </div>
-                            <div class="col-8">
-                                <input type="number" class="form-control form-control-sm" id="healthcare"
-                                    name="healthcare" placeholder="Amount" disabled min="0">
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
 
                 <!-- Totals -->
